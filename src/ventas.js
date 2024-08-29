@@ -1,6 +1,6 @@
 function showCant(cant)
 {
-    return 5;
+    return cant;
 }
 export default showCant;
 
