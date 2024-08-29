@@ -1,9 +1,12 @@
 import showCant from './ventas.js';
 
 document.getElementById('mostrar').addEventListener('click', () => {
-    const cantidad = document.getElementById('cantidad').value;
-    const resultado = showCant(cantidad);
-    document.getElementById('resultado').textContent = resultado;
+    const cantidaditems = document.getElementById('cantidaditem').value;
+    const precioitems = document.getElementById('precioitem').value;
+    const Items= showCant(cantidaditems);
+    const Precio = showCant(precioitems);
+    document.getElementById('Items').textContent = cantidaditems;
+    document.getElementById('Precio').textContent = precioitems;
 });
 
 
